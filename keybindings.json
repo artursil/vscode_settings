@@ -1,0 +1,68 @@
+// Place your key bindings in this file to override the defaults
+[
+    // Navigation
+    {
+        "key": "ctrl+w",
+        "command": "workbench.action.closeActiveEditor",
+        "when":"vim.mode == 'Normal' && (editorTextFocus || !inputFocus)"
+    },
+    {
+        "key": "ctrl+shift+w",
+        "command": "workbench.action.closeEditorsInGroup",
+        "when":"vim.mode == 'Normal' && (editorTextFocus || !inputFocus)"
+    },
+    {
+        "key": "ctrl-j",
+        "command": "workbench.action.navigateLeft"
+    },
+    {
+        "key": "ctrl-;",
+        "command": "workbench.action.navigateRight"
+    },
+    {
+        "key": "ctrl-k",
+        "command": "workbench.action.navigateDown"
+    },
+    {
+        "key": "ctrl-l",
+        "command": "workbench.action.navigateUp"
+    },
+    {
+        "key": ", ,",
+        "command": "workbench.action.showAllEditors",
+        "when":"vim.mode == 'Normal' && (editorTextFocus || !inputFocus)"
+    },
+    {
+        "key": ", e",
+        "command": "workbench.action.toggleSidebarVisibility",
+        "when":"vim.mode == 'Normal' && (editorTextFocus || !inputFocus)"
+    },
+    {
+        "key": "tab",
+        "command": "workbench.action.nextEditorInGroup",
+        "when":"(vim.mode == 'Normal' || vim.mode == 'Visual') && (editorTextFocus || !inputFocus)"
+    },
+    {
+        "key": "shift-tab",
+        "command": "workbench.action.previousEditorInGroup",
+        "when":"(vim.mode == 'Normal' || vim.mode == 'Visual') && (editorTextFocus || !inputFocus)"
+    },
+
+    //Coding
+    {
+        "key": "shift-k",
+        "command": "editor.action.moveLinesDownAction",
+        "when": "vim.mode != 'Insert' && editorTextFocus"
+    },
+    {
+        "key": "shift-l",
+        "command": "editor.action.moveLinesUpAction",
+        "when": "vim.mode != 'Insert' && editorTextFocus"
+    },
+    {
+        "key": "shift-k",
+        "command": "editor.action.moveLinesDownAction",
+        "when": "vim.mode == 'Insert' && editorTextFocus"
+    },
+
+]

@@ -130,4 +130,8 @@
     "files.autoSave": "onFocusChange",
     "python.envFile": "${workspaceFolder}/.env",
     "remote.autoForwardPortsSource": "hybrid",
+    "zenMode.hideLineNumbers": false,
+    "zenMode.showTabs": "none",
+    "zenMode.centerLayout": false,
+    "zenMode.hideStatusBar": false,
 }
